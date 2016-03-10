@@ -79,4 +79,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #My code
+  config.middleware.use ChatActionCable  
+  config.web_socket_server_url = "wss://agile-gorge-65835.herokuapp.com/"
 end
