@@ -1,5 +1,3 @@
-App.cable = Cable.createConsumer("<%= Rails.application.config.web_socket_server_url %>");  
-
 App.room = App.cable.subscriptions.create "RoomChannel",
   connected: ->
     # Called when the subscription is ready for use on the server
